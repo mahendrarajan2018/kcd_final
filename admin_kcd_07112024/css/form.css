@@ -1,0 +1,136 @@
+:root {
+    --input-padding-x: .5rem;
+    --input-padding-y: .5rem;
+    --placeholder-color: #6c757d;
+    --top-position: 14px;
+    --input-background-color: #ffffff;
+    --top-position-in-border: 5px;
+    --outline-border-color: #80bdff;
+    --top-position-outline: -8px;
+    --normal-border-color: #ced4da;
+    --outline-border-size: .125rem;
+    --outline-animation-duration: .3s;
+    --outline-transition-type: linear;
+}
+.form-label-group {
+    position: relative;
+    margin-bottom: 0.2rem;
+}
+.form-label-group label {
+    margin: 0;
+    pointer-events: none;
+}
+
+.form-label-group input,
+.form-label-group textarea,
+.form-label-group label,
+.form-label-group:not(.in-border).form-label-group:not(.outline) select {
+    padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group label {
+    position: absolute;
+    top: 38%;
+    left: 0px;
+    display: block;
+    width: 100%;
+    margin-bottom: 0; 
+    color: var(--placeholder-color);
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+    transform-origin: 0 0;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 999;
+}
+.form-label-group.form-control {
+    padding:0;
+}
+.form-label-group.form-control input {
+    border: none;
+    height: 99%;
+}
+.form-label-group textarea ~ label {
+    top: 0px;
+    transform: translateY(0);
+}
+
+.form-label-group:not(.in-border).form-label-group:not(.outline) select {
+    padding-bottom: 0;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label, .form-label-group input:focus ~ label, .form-label-group textarea:not(:placeholder-shown) ~ label, .form-label-group textarea:focus ~ label, .form-label-group select ~ label {
+    font-size:15px;
+    top: var(--top-position);
+    transform: translateY(-50%) scale(.7);
+    visibility: visible;
+}
+.form-label-group input.form-control-lg:not(:placeholder-shown) ~ label, .form-label-group input.form-control-lg:focus ~ label{
+    top: calc(2px + var(--top-position));
+}
+.form-label-group input.form-control-sm:not(:placeholder-shown) ~ label, .form-label-group input.form-control-sm:focus ~ label{
+    top: calc(2px - var(--top-position));
+}
+.form-label-group input:focus::placeholder, .form-label-group textarea:focus::placeholder {
+    visibility: hidden;
+    color: rgba(255, 255, 255, 0);
+    transition-delay: 0s;
+    opacity: 0;
+    text-shadow: none;
+}
+
+.form-label-group input::placeholder, .form-label-group textarea::placeholder {
+    transition-delay: .2s;
+    color: rgba(255, 255, 255, 0);
+    opacity: 0;
+}
+
+/* In Border */
+
+.form-label-group.in-border label {width: auto;}
+
+.form-label-group.in-border input:focus, .form-label-group.in-border textarea:focus, .form-label-group.in-border select:focus {
+    box-shadow: none;
+}
+
+.form-label-group.in-border input:not(:placeholder-shown) ~ label, .form-label-group.in-border input:focus ~ label, .form-label-group.in-border textarea:not(:placeholder-shown) ~ label, .form-label-group.in-border textarea:focus ~ label, .form-label-group.in-border select ~ label {
+    left: calc(var(--input-padding-x));
+    top: var(--top-position-in-border);
+    height: auto;
+}
+
+.form-label-group.in-border input:not(:placeholder-shown) ~ label::after, .form-label-group.in-border input:focus ~ label::after, .form-label-group.in-border textarea:not(:placeholder-shown) ~ label::after, .form-label-group.in-border textarea:focus ~ label::after, .form-label-group.in-border select ~ label::after {
+    visibility: visible;
+    transition: all .2s ease;
+}
+
+.form-label-group.in-border label::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    background: var(--input-background-color);
+    height: 4px;
+    top: 50%;
+    left: .7em;
+    right: .7em;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.form-label-group.in-border input,
+.form-label-group.in-border label {
+    padding: var(--input-padding-y) var(--input-padding-x);   
+    font-size: 13px;
+}
+
+.form-label-group.in-border textarea,
+.form-label-group.in-border textarea ~ label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group.in-border input,
+.form-label-group.in-border textarea, 
+.form-label-group.in-border label,
+.form-label-group.in-border select {
+    transition: all .2s linear, border-color .5s ease-in-out,box-shadow .5s ease-in-out;
+}

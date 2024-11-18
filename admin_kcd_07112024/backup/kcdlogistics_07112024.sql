@@ -1,0 +1,399 @@
+
+
+CREATE TABLE `kcd_2024_account_party` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `account_party_id` mediumtext NOT NULL,
+  `name` mediumtext NOT NULL,
+  `mobile_number` mediumtext NOT NULL,
+  `name_mobile_city` mediumtext NOT NULL,
+  `identification` mediumtext NOT NULL,
+  `address` mediumtext NOT NULL,
+  `state` mediumtext NOT NULL,
+  `district` mediumtext NOT NULL,
+  `city` mediumtext NOT NULL,
+  `others_city` mediumtext NOT NULL,
+  `account_party_details` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_account_party (id, created_date_time, creator, creator_name, account_party_id, name, mobile_number, name_mobile_city, identification, address, state, district, city, others_city, account_party_details, deleted) VALUES ('1','2024-11-15 16:29:32','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','51584a316243424e64584a315a324675','4d7a51314e6a63344f5441784d673d3d','51584a316243424e64584a315a3246754943677a4e4455324e7a67354d4445794b5341744946526f61584a3164476868626d646862413d3d','NULL','NULL','5647467461577767546d466b64513d3d','566d6c796457526f645735685a324679','56476870636e5630614746755a324673','','51584a316243424e64584a315a3246754a6d78304f324a794a6d64304f31526f61584a3164476868626d646862437767566d6c796457526f645735685a3246794c434255595731706243424f595752314a6d78304f324a794a6d64304f79424e62324a70624755674f69417a4e4455324e7a67354d444579','0');
+
+
+CREATE TABLE `kcd_2024_branch` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `branch_id` mediumtext NOT NULL,
+  `name` mediumtext NOT NULL,
+  `lower_case_name` mediumtext NOT NULL,
+  `mobile_number` mediumtext NOT NULL,
+  `prefix` mediumtext NOT NULL,
+  `lower_case_prefix` mediumtext NOT NULL,
+  `prefix_name_mobile` mediumtext NOT NULL,
+  `address` mediumtext NOT NULL,
+  `godown_id` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_branch (id, created_date_time, creator, creator_name, branch_id, name, lower_case_name, mobile_number, prefix, lower_case_prefix, prefix_name_mobile, address, godown_id, deleted) VALUES ('1','2024-11-15 16:00:50','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4441774e5442664d44453d','55326c325957746863326b67516e4a68626d4e6f','63326c325957746863326b67596e4a68626d4e6f','4d54497a4e4455324e7a67354d413d3d','55315a4c','63335a72','55315a4c4943306755326c325957746863326b67516e4a68626d4e6f494367784d6a4d304e5459334f446b774b513d3d','','4d5455784d5449774d6a51774d7a55354e4468664d44493d,4d5455784d5449774d6a51774d7a55354d7a46664d44453d','0');
+
+INSERT INTO kcd_2024_branch (id, created_date_time, creator, creator_name, branch_id, name, lower_case_name, mobile_number, prefix, lower_case_prefix, prefix_name_mobile, address, godown_id, deleted) VALUES ('2','2024-11-15 16:01:13','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4441784d5452664d44493d','56476870636e5630614746755a32467349454a795957356a61413d3d','64476870636e5630614746755a32467349474a795957356a61413d3d','4d6a4d304e5459334f446b774d513d3d','5646524d','64485273','5646524d4943306756476870636e5630614746755a32467349454a795957356a6143416f4d6a4d304e5459334f446b774d536b3d','','4d5455784d5449774d6a51774d7a55354e4468664d44493d','0');
+
+INSERT INTO kcd_2024_branch (id, created_date_time, creator, creator_name, branch_id, name, lower_case_name, mobile_number, prefix, lower_case_prefix, prefix_name_mobile, address, godown_id, deleted) VALUES ('3','2024-11-15 16:01:38','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4441784d7a6c664d444d3d','553246306448567949454a795957356a61413d3d','633246306448567949474a795957356a61413d3d','4d7a51314e6a63344f5441784d673d3d','55304655','63324630','5530465549433067553246306448567949454a795957356a6143416f4d7a51314e6a63344f5441784d696b3d','','4d5455784d5449774d6a51774e4441774d4456664d444d3d,4d5455784d5449774d6a51774d7a55354e4468664d44493d,4d5455784d5449774d6a51774d7a55354d7a46664d44453d','0');
+
+
+CREATE TABLE `kcd_2024_consignee` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `consignee_id` mediumtext NOT NULL,
+  `name` mediumtext NOT NULL,
+  `mobile_number` mediumtext NOT NULL,
+  `name_mobile_city` mediumtext NOT NULL,
+  `identification` mediumtext NOT NULL,
+  `address` mediumtext NOT NULL,
+  `state` mediumtext NOT NULL,
+  `district` mediumtext NOT NULL,
+  `city` mediumtext NOT NULL,
+  `others_city` mediumtext NOT NULL,
+  `consignee_details` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_consignee (id, created_date_time, creator, creator_name, consignee_id, name, mobile_number, name_mobile_city, identification, address, state, district, city, others_city, consignee_details, deleted) VALUES ('1','2024-11-15 16:29:32','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','553356796557453d','4d6a4d304e5459334f446b774d513d3d','55335679655745674b44497a4e4455324e7a67354d444570494330675532463064485679','546c564d54413d3d','546c564d54413d3d','5647467461577767546d466b64513d3d','566d6c796457526f645735685a324679','5532463064485679','','553356796557456d62485137596e496d5a335137546c564d54435a736444746963695a6e64447454595852306458497349465a70636e566b6148567559576468636977675647467461577767546d466b64535a736444746963695a6e64447367545739696157786c49446f674d6a4d304e5459334f446b774d535a736444746963695a6e6444744f5655784d','0');
+
+INSERT INTO kcd_2024_consignee (id, created_date_time, creator, creator_name, consignee_id, name, mobile_number, name_mobile_city, identification, address, state, district, city, others_city, consignee_details, deleted) VALUES ('2','2024-11-15 16:32:35','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e444d794d7a5a664d44493d','566d6c756233526f','4e5459334f446b774d54497a4e413d3d','566d6c756233526f494367314e6a63344f5441784d6a4d304b53417449464e686448523163673d3d','NULL','NULL','5647467461577767546d466b64513d3d','566d6c796457526f645735685a324679','5532463064485679','','566d6c756233526f4a6d78304f324a794a6d64304f314e686448523163697767566d6c796457526f645735685a3246794c434255595731706243424f595752314a6d78304f324a794a6d64304f79424e62324a70624755674f6941314e6a63344f5441784d6a4d30','0');
+
+
+CREATE TABLE `kcd_2024_consignor` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `consignor_id` mediumtext NOT NULL,
+  `name` mediumtext NOT NULL,
+  `mobile_number` mediumtext NOT NULL,
+  `name_mobile_city` mediumtext NOT NULL,
+  `identification` mediumtext NOT NULL,
+  `address` mediumtext NOT NULL,
+  `state` mediumtext NOT NULL,
+  `district` mediumtext NOT NULL,
+  `city` mediumtext NOT NULL,
+  `others_city` mediumtext NOT NULL,
+  `consignor_details` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_consignor (id, created_date_time, creator, creator_name, consignor_id, name, mobile_number, name_mobile_city, identification, address, state, district, city, others_city, consignor_details, deleted) VALUES ('1','2024-11-15 16:29:32','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','523246755a584e6f','4d54497a4e4455324e7a67354d413d3d','523246755a584e6f494367784d6a4d304e5459334f446b774b53417449464e70646d467259584e70','546c564d54413d3d','546c564d54413d3d','5647467461577767546d466b64513d3d','566d6c796457526f645735685a324679','55326c325957746863326b3d','','523246755a584e6f4a6d78304f324a794a6d64304f3035565445776d62485137596e496d5a33513755326c325957746863326b7349465a70636e566b6148567559576468636977675647467461577767546d466b64535a736444746963695a6e64447367545739696157786c49446f674d54497a4e4455324e7a67354d435a736444746963695a6e6444744f5655784d','0');
+
+INSERT INTO kcd_2024_consignor (id, created_date_time, creator, creator_name, consignor_id, name, mobile_number, name_mobile_city, identification, address, state, district, city, others_city, consignor_details, deleted) VALUES ('2','2024-11-15 16:32:35','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e444d794d7a56664d44493d','5457466f5a584e6f','4e4455324e7a67354d4445794d773d3d','5457466f5a584e6f494367304e5459334f446b774d54497a4b5341744946526f61584a3164476868626d646862413d3d','NULL','NULL','5647467461577767546d466b64513d3d','566d6c796457526f645735685a324679','56476870636e5630614746755a324673','','5457466f5a584e6f4a6d78304f324a794a6d64304f31526f61584a3164476868626d646862437767566d6c796457526f645735685a3246794c434255595731706243424f595752314a6d78304f324a794a6d64304f79424e62324a70624755674f6941304e5459334f446b774d54497a','0');
+
+
+CREATE TABLE `kcd_2024_godown` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `godown_id` mediumtext NOT NULL,
+  `name` mediumtext NOT NULL,
+  `lower_case_name` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_godown (id, created_date_time, creator, creator_name, godown_id, name, lower_case_name, deleted) VALUES ('1','2024-11-15 15:59:31','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774d7a55354d7a46664d44453d','55326c325957746863326b675232396b62336475','63326c325957746863326b675a32396b62336475','0');
+
+INSERT INTO kcd_2024_godown (id, created_date_time, creator, creator_name, godown_id, name, lower_case_name, deleted) VALUES ('2','2024-11-15 15:59:48','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774d7a55354e4468664d44493d','56476870636e5630614746755a3246734945646b62336475','64476870636e5630614746755a3246734947646b62336475','0');
+
+INSERT INTO kcd_2024_godown (id, created_date_time, creator, creator_name, godown_id, name, lower_case_name, deleted) VALUES ('3','2024-11-15 16:00:05','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4441774d4456664d444d3d','5532463064485679494564765a47393362673d3d','6332463064485679494764765a47393362673d3d','0');
+
+
+CREATE TABLE `kcd_2024_login` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `loginer_name` mediumtext NOT NULL,
+  `login_date_time` datetime NOT NULL,
+  `logout_date_time` datetime NOT NULL,
+  `ip_address` mediumtext NOT NULL,
+  `browser` mediumtext NOT NULL,
+  `os_detail` mediumtext NOT NULL,
+  `type` mediumtext NOT NULL,
+  `user_id` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_login (id, loginer_name, login_date_time, logout_date_time, ip_address, browser, os_detail, type, user_id, deleted) VALUES ('1','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','2024-11-15 15:58:45','2024-11-15 19:24:18','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0','Windows NT SRISOFTWAREZ 10.0 build 22631 (Windows 11) AMD64','Super Admin','4d5455784d5449774d6a51774d7a55344e4446664d44453d','0');
+
+INSERT INTO kcd_2024_login (id, loginer_name, login_date_time, logout_date_time, ip_address, browser, os_detail, type, user_id, deleted) VALUES ('2','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','2024-11-16 09:10:21','2024-11-16 12:53:38','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0','Windows NT SRISOFTWAREZ 10.0 build 22631 (Windows 11) AMD64','Super Admin','4d5455784d5449774d6a51774d7a55344e4446664d44453d','0');
+
+INSERT INTO kcd_2024_login (id, loginer_name, login_date_time, logout_date_time, ip_address, browser, os_detail, type, user_id, deleted) VALUES ('3','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','2024-11-16 13:14:24','2024-11-16 14:00:13','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0','Windows NT SRISOFTWAREZ 10.0 build 22631 (Windows 11) AMD64','Super Admin','4d5455784d5449774d6a51774d7a55344e4446664d44453d','0');
+
+INSERT INTO kcd_2024_login (id, loginer_name, login_date_time, logout_date_time, ip_address, browser, os_detail, type, user_id, deleted) VALUES ('4','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','2024-11-16 15:11:44','2024-11-16 16:34:56','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0','Windows NT SRISOFTWAREZ 10.0 build 22631 (Windows 11) AMD64','Super Admin','4d5455784d5449774d6a51774d7a55344e4446664d44453d','0');
+
+INSERT INTO kcd_2024_login (id, loginer_name, login_date_time, logout_date_time, ip_address, browser, os_detail, type, user_id, deleted) VALUES ('5','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','2024-11-16 16:55:49','2024-11-16 19:42:03','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0','Windows NT SRISOFTWAREZ 10.0 build 22631 (Windows 11) AMD64','Super Admin','4d5455784d5449774d6a51774d7a55344e4446664d44453d','0');
+
+INSERT INTO kcd_2024_login (id, loginer_name, login_date_time, logout_date_time, ip_address, browser, os_detail, type, user_id, deleted) VALUES ('6','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','2024-11-18 09:09:08','2024-11-18 09:55:24','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0','Windows NT SRISOFTWAREZ 10.0 build 22631 (Windows 11) AMD64','Super Admin','4d5455784d5449774d6a51774d7a55344e4446664d44453d','0');
+
+
+CREATE TABLE `kcd_2024_lr` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `lr_id` mediumtext NOT NULL,
+  `lr_number` mediumtext NOT NULL,
+  `lr_date` date NOT NULL,
+  `organization_id` mediumtext NOT NULL,
+  `organization_details` mediumtext NOT NULL,
+  `consignor_id` mediumtext NOT NULL,
+  `consignor_name_mobile_city` mediumtext NOT NULL,
+  `consignor_details` mediumtext NOT NULL,
+  `consignee_id` mediumtext NOT NULL,
+  `consignee_name_mobile_city` mediumtext NOT NULL,
+  `consignee_details` mediumtext NOT NULL,
+  `account_party_id` mediumtext NOT NULL,
+  `account_party_name_mobile_city` text NOT NULL,
+  `account_party_details` mediumtext NOT NULL,
+  `from_branch_id` mediumtext NOT NULL,
+  `from_branch_details` mediumtext NOT NULL,
+  `to_branch_id` mediumtext NOT NULL,
+  `to_branch_details` mediumtext NOT NULL,
+  `bill_type` mediumtext NOT NULL,
+  `gst_option` int(100) NOT NULL,
+  `tax_value` mediumtext NOT NULL,
+  `unit_id` mediumtext NOT NULL,
+  `unit_name` mediumtext NOT NULL,
+  `quantity` mediumtext NOT NULL,
+  `weight` mediumtext NOT NULL,
+  `rate` mediumtext NOT NULL,
+  `freight` mediumtext NOT NULL,
+  `kooli` mediumtext NOT NULL,
+  `kooli_by_quantity` mediumtext NOT NULL,
+  `amount` mediumtext NOT NULL,
+  `sub_total` mediumtext NOT NULL,
+  `delivery_charges` mediumtext NOT NULL,
+  `delivery_charges_value` mediumtext NOT NULL,
+  `loading_charges` mediumtext NOT NULL,
+  `loading_charges_value` mediumtext NOT NULL,
+  `cgst` mediumtext NOT NULL,
+  `sgst` mediumtext NOT NULL,
+  `igst` mediumtext NOT NULL,
+  `round_off` mediumtext NOT NULL,
+  `total_quantity` mediumtext NOT NULL,
+  `total_weight` mediumtext NOT NULL,
+  `total_amount` mediumtext NOT NULL,
+  `tripsheet_number` mediumtext NOT NULL,
+  `cleared` int(100) NOT NULL,
+  `received_person` mediumtext NOT NULL,
+  `received_person_contact_number` mediumtext NOT NULL,
+  `received_person_identification` mediumtext NOT NULL,
+  `cancelled` int(100) NOT NULL,
+  `cancel_date` date NOT NULL,
+  `cancel_remarks` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_lr (id, created_date_time, creator, creator_name, lr_id, lr_number, lr_date, organization_id, organization_details, consignor_id, consignor_name_mobile_city, consignor_details, consignee_id, consignee_name_mobile_city, consignee_details, account_party_id, account_party_name_mobile_city, account_party_details, from_branch_id, from_branch_details, to_branch_id, to_branch_details, bill_type, gst_option, tax_value, unit_id, unit_name, quantity, weight, rate, freight, kooli, kooli_by_quantity, amount, sub_total, delivery_charges, delivery_charges_value, loading_charges, loading_charges_value, cgst, sgst, igst, round_off, total_quantity, total_weight, total_amount, tripsheet_number, cleared, received_person, received_person_contact_number, received_person_identification, cancelled, cancel_date, cancel_remarks, deleted) VALUES ('1','2024-11-15 16:29:32','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','1/P','2024-11-15','4d5451784d5449774d6a51784d6a55344d4468664d44493d','53304e45494652795957357a63473979644342485531516d62485137596e496d5a3351374d6938324e6a5573494563674c53424c4c6c4d7551533553595770685a48567959576b67546d466e5958496d62485137596e496d5a3351374d6a68306143425464484a6c5a58517349454a796157356b59585a686269424f5957646863695a736444746963695a6e644474546158526f64584a68616d467764584a6862534174494459794e6a45794d795a736444746963695a6e6444745761584a315a476831626d466e5958496d62485137596e496d5a3351375647467461577767546d466b64535a736444746963695a6e6444744e62324a70624755674f6a6b324d6a6b354e5441774d44456d62485137596e496d5a33513752314e5549456c4f49446f794d6b4642515546424d4441774d454578576a553d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','523246755a584e6f494367784d6a4d304e5459334f446b774b53417449464e70646d467259584e70','523246755a584e6f4a6d78304f324a794a6d64304f314e70646d467259584e704c43425761584a315a476831626d466e595849734946526862576c73494535685a48556d62485137596e496d5a33513749453176596d6c735a534136494445794d7a51314e6a63344f54413d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','55335679655745674b44497a4e4455324e7a67354d444570494330675532463064485679','553356796557456d62485137596e496d5a33513755324630644856794c43425761584a315a476831626d466e595849734946526862576c73494535685a48556d62485137596e496d5a33513749453176596d6c735a5341364944497a4e4455324e7a67354d44453d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','51584a316243424e64584a315a3246754943677a4e4455324e7a67354d4445794b5341744946526f61584a3164476868626d646862413d3d','51584a316243424e64584a315a3246754a6d78304f324a794a6d64304f31526f61584a3164476868626d646862437767566d6c796457526f645735685a3246794c434255595731706243424f595752314a6d78304f324a794a6d64304f79424e62324a70624755674f69417a4e4455324e7a67354d444579','4d5455784d5449774d6a51774e4441774e5442664d44453d','55315a4c4943306755326c325957746863326b67516e4a68626d4e6f494367784d6a4d304e5459334f446b774b513d3d','4d5455784d5449774d6a51774e4441784d7a6c664d444d3d','5530465549433067553246306448567949454a795957356a6143416f4d7a51314e6a63344f5441784d696b3d','554746705a413d3d','1','18%','4d5455784d5449774d6a51774e4449314e4452664d444d3d,4d5455784d5449774d6a51774e4449314e4452664d44493d','5132467a5a513d3d,5332633d','10,0','0,50','250,25','2500.00,1250.00','50,25','500.00,1250.00','3000,2500','5500','2%','110.00','1%','56.10','509.95','509.95','0','0','','','6686.00','1/TS','1','553356796557453d','4d6a4d304e5459334f446b774d513d3d','546c564d54413d3d','0','1947-01-01','NULL','0');
+
+INSERT INTO kcd_2024_lr (id, created_date_time, creator, creator_name, lr_id, lr_number, lr_date, organization_id, organization_details, consignor_id, consignor_name_mobile_city, consignor_details, consignee_id, consignee_name_mobile_city, consignee_details, account_party_id, account_party_name_mobile_city, account_party_details, from_branch_id, from_branch_details, to_branch_id, to_branch_details, bill_type, gst_option, tax_value, unit_id, unit_name, quantity, weight, rate, freight, kooli, kooli_by_quantity, amount, sub_total, delivery_charges, delivery_charges_value, loading_charges, loading_charges_value, cgst, sgst, igst, round_off, total_quantity, total_weight, total_amount, tripsheet_number, cleared, received_person, received_person_contact_number, received_person_identification, cancelled, cancel_date, cancel_remarks, deleted) VALUES ('2','2024-11-15 16:32:35','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e444d794d7a5a664d44493d','2/P','2024-11-15','4d5451784d5449774d6a51784d6a55324e446c664d44453d','53304e45494652795957357a6347397964435a736444746963695a6e644473794c7a59324e5377675279417449457375557935424c6c4a68616d466b64584a686153424f5957646863695a736444746963695a6e644473794f48526f49464e30636d566c64437767516e4a70626d5268646d4675494535685a3246794a6d78304f324a794a6d64304f314e7064476831636d467159584231636d4674494330674e6a49324d54497a4a6d78304f324a794a6d64304f315a70636e566b614856755957646863695a736444746963695a6e64447455595731706243424f595752314a6d78304f324a794a6d64304f303176596d6c735a5341364f5459794f546b314d4441774d513d3d','4d5455784d5449774d6a51774e444d794d7a56664d44493d','5457466f5a584e6f494367304e5459334f446b774d54497a4b5341744946526f61584a3164476868626d646862413d3d','5457466f5a584e6f4a6d78304f324a794a6d64304f31526f61584a3164476868626d646862437767566d6c796457526f645735685a3246794c434255595731706243424f595752314a6d78304f324a794a6d64304f79424e62324a70624755674f6941304e5459334f446b774d54497a','4d5455784d5449774d6a51774e444d794d7a5a664d44493d','566d6c756233526f494367314e6a63344f5441784d6a4d304b53417449464e686448523163673d3d','566d6c756233526f4a6d78304f324a794a6d64304f314e686448523163697767566d6c796457526f645735685a3246794c434255595731706243424f595752314a6d78304f324a794a6d64304f79424e62324a70624755674f6941314e6a63344f5441784d6a4d30','NULL','NULL','NULL','4d5455784d5449774d6a51774e4441784d5452664d44493d','5646524d4943306756476870636e5630614746755a32467349454a795957356a6143416f4d6a4d304e5459334f446b774d536b3d','4d5455784d5449774d6a51774e4441784d7a6c664d444d3d','5530465549433067553246306448567949454a795957356a6143416f4d7a51314e6a63344f5441784d696b3d','5647386755474635','0','0%','4d5455784d5449774d6a51774e4449314e4452664d44493d','5332633d','0','10','50','500.00','0','0','500','500','0','0','0','0','0','0','0','0','','','500','3/TS','1','51584a3162413d3d','4d54497a4e4455324e7a67354d413d3d','NULL','0','1947-01-01','NULL','0');
+
+INSERT INTO kcd_2024_lr (id, created_date_time, creator, creator_name, lr_id, lr_number, lr_date, organization_id, organization_details, consignor_id, consignor_name_mobile_city, consignor_details, consignee_id, consignee_name_mobile_city, consignee_details, account_party_id, account_party_name_mobile_city, account_party_details, from_branch_id, from_branch_details, to_branch_id, to_branch_details, bill_type, gst_option, tax_value, unit_id, unit_name, quantity, weight, rate, freight, kooli, kooli_by_quantity, amount, sub_total, delivery_charges, delivery_charges_value, loading_charges, loading_charges_value, cgst, sgst, igst, round_off, total_quantity, total_weight, total_amount, tripsheet_number, cleared, received_person, received_person_contact_number, received_person_identification, cancelled, cancel_date, cancel_remarks, deleted) VALUES ('3','2024-11-16 09:30:29','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5459784d5449774d6a51774f544d774d6a6c664d444d3d','3/P','2024-11-16','4d5451784d5449774d6a51784d6a55344d4468664d44493d','53304e45494652795957357a63473979644342485531516d62485137596e496d5a3351374d6938324e6a5573494563674c53424c4c6c4d7551533553595770685a48567959576b67546d466e5958496d62485137596e496d5a3351374d6a68306143425464484a6c5a58517349454a796157356b59585a686269424f5957646863695a736444746963695a6e644474546158526f64584a68616d467764584a6862534174494459794e6a45794d795a736444746963695a6e6444745761584a315a476831626d466e5958496d62485137596e496d5a3351375647467461577767546d466b64535a736444746963695a6e6444744e62324a70624755674f6a6b324d6a6b354e5441774d44456d62485137596e496d5a33513752314e5549456c4f49446f794d6b4642515546424d4441774d454578576a553d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','523246755a584e6f494367784d6a4d304e5459334f446b774b53417449464e70646d467259584e70','523246755a584e6f4a6d78304f324a794a6d64304f3035565445776d62485137596e496d5a33513755326c325957746863326b7349465a70636e566b6148567559576468636977675647467461577767546d466b64535a736444746963695a6e64447367545739696157786c49446f674d54497a4e4455324e7a67354d435a736444746963695a6e6444744f5655784d','4d5455784d5449774d6a51774e4449354d7a4a664d44453d','55335679655745674b44497a4e4455324e7a67354d444570494330675532463064485679','553356796557456d62485137596e496d5a335137546c564d54435a736444746963695a6e64447454595852306458497349465a70636e566b6148567559576468636977675647467461577767546d466b64535a736444746963695a6e64447367545739696157786c49446f674d6a4d304e5459334f446b774d535a736444746963695a6e6444744f5655784d','NULL','NULL','NULL','4d5455784d5449774d6a51774e4441774e5442664d44453d','55315a4c4943306755326c325957746863326b67516e4a68626d4e6f494367784d6a4d304e5459334f446b774b513d3d','4d5455784d5449774d6a51774e4441784d5452664d44493d','5646524d4943306756476870636e5630614746755a32467349454a795957356a6143416f4d6a4d304e5459334f446b774d536b3d','554746705a413d3d','1','18%','4d5455784d5449774d6a51774e4449314e4452664d44453d,4d5455784d5449774d6a51774e4449314e4452664d44493d','55476c6c5932553d,5332633d','100,0','0,50','50,25','5000.00,1250.00','0,0','0,0','5000,1250','6250','0','0','0','0','562.50','562.50','0','0','','','7375.00','NULL','1','5458567561513d3d','4f5467334e6a55304d7a49784d413d3d','5157466b614746686369424f62794136494445794d7a51674e54593349446b774d54493d','0','1947-01-01','NULL','0');
+
+
+CREATE TABLE `kcd_2024_luggage_sheet` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `luggage_sheet_id` mediumtext NOT NULL,
+  `luggage_sheet_number` mediumtext NOT NULL,
+  `entry_date` date NOT NULL,
+  `from_location` mediumtext NOT NULL,
+  `from_location_details` mediumtext NOT NULL,
+  `to_location` mediumtext NOT NULL,
+  `to_location_details` mediumtext NOT NULL,
+  `lr_id` mediumtext NOT NULL,
+  `lr_number` mediumtext NOT NULL,
+  `lr_count` mediumtext NOT NULL,
+  `vehicle_id` mediumtext NOT NULL,
+  `vehicle_details` mediumtext NOT NULL,
+  `driver_name` mediumtext NOT NULL,
+  `driver_number` mediumtext NOT NULL,
+  `driver_details` mediumtext NOT NULL,
+  `helper_name` mediumtext NOT NULL,
+  `cleared` int(100) NOT NULL,
+  `cancelled` int(100) NOT NULL,
+  `cancel_date` date NOT NULL,
+  `cancel_remarks` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE `kcd_2024_organization` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `organization_id` mediumtext NOT NULL,
+  `name` mediumtext NOT NULL,
+  `lower_case_name` mediumtext NOT NULL,
+  `address1` mediumtext NOT NULL,
+  `address2` mediumtext NOT NULL,
+  `state` mediumtext NOT NULL,
+  `district` mediumtext NOT NULL,
+  `city` mediumtext NOT NULL,
+  `others_city` mediumtext NOT NULL,
+  `pincode` mediumtext NOT NULL,
+  `gst_number` mediumtext NOT NULL,
+  `mobile_number` mediumtext NOT NULL,
+  `organization_details` mediumtext NOT NULL,
+  `primary_organization` int(100) NOT NULL,
+  `sms_on_off` int(100) NOT NULL,
+  `tax_on_off` int(100) NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_organization (id, created_date_time, creator, creator_name, organization_id, name, lower_case_name, address1, address2, state, district, city, others_city, pincode, gst_number, mobile_number, organization_details, primary_organization, sms_on_off, tax_on_off, deleted) VALUES ('1','2024-11-14 12:56:49','4d5451784d5449774d6a51784d6a55314d546c664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5451784d5449774d6a51784d6a55324e446c664d44453d','53304e45494652795957357a6347397964413d3d','61324e6b494852795957357a6347397964413d3d','4d6938324e6a5573494563674c53424c4c6c4d7551533553595770685a48567959576b67546d466e5958493d','4d6a68306143425464484a6c5a58517349454a796157356b59585a686269424f5957646863673d3d','5647467461577767546d466b64513d3d','566d6c796457526f645735685a324679','55326c306148567959577068634856795957303d','Sithurajapuram','4e6a49324d54497a','NULL','4f5459794f546b314d4441774d513d3d','53304e45494652795957357a6347397964435a736444746963695a6e644473794c7a59324e5377675279417449457375557935424c6c4a68616d466b64584a686153424f5957646863695a736444746963695a6e644473794f48526f49464e30636d566c64437767516e4a70626d5268646d4675494535685a3246794a6d78304f324a794a6d64304f314e7064476831636d467159584231636d4674494330674e6a49324d54497a4a6d78304f324a794a6d64304f315a70636e566b614856755957646863695a736444746963695a6e64447455595731706243424f595752314a6d78304f324a794a6d64304f303176596d6c735a5341364f5459794f546b314d4441774d513d3d','1','1','0','0');
+
+INSERT INTO kcd_2024_organization (id, created_date_time, creator, creator_name, organization_id, name, lower_case_name, address1, address2, state, district, city, others_city, pincode, gst_number, mobile_number, organization_details, primary_organization, sms_on_off, tax_on_off, deleted) VALUES ('2','2024-11-14 12:58:08','4d5451784d5449774d6a51784d6a55314d546c664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5451784d5449774d6a51784d6a55344d4468664d44493d','53304e45494652795957357a63473979644342485531513d','61324e6b494852795957357a634739796443426e6333513d','4d6938324e6a5573494563674c53424c4c6c4d7551533553595770685a48567959576b67546d466e5958493d','4d6a68306143425464484a6c5a58517349454a796157356b59585a686269424f5957646863673d3d','5647467461577767546d466b64513d3d','566d6c796457526f645735685a324679','55326c306148567959577068634856795957303d','NULL','4e6a49324d54497a','4d6a4a4251554642515441774d4442424d566f31','4f5459794f546b314d4441774d513d3d','53304e45494652795957357a63473979644342485531516d62485137596e496d5a3351374d6938324e6a5573494563674c53424c4c6c4d7551533553595770685a48567959576b67546d466e5958496d62485137596e496d5a3351374d6a68306143425464484a6c5a58517349454a796157356b59585a686269424f5957646863695a736444746963695a6e644474546158526f64584a68616d467764584a6862534174494459794e6a45794d795a736444746963695a6e6444745761584a315a476831626d466e5958496d62485137596e496d5a3351375647467461577767546d466b64535a736444746963695a6e6444744e62324a70624755674f6a6b324d6a6b354e5441774d44456d62485137596e496d5a33513752314e5549456c4f49446f794d6b4642515546424d4441774d454578576a553d','0','0','1','0');
+
+
+CREATE TABLE `kcd_2024_role` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `role_id` mediumtext NOT NULL,
+  `role_name` mediumtext NOT NULL,
+  `lower_case_name` mediumtext NOT NULL,
+  `access_pages` mediumtext NOT NULL,
+  `access_page_actions` mediumtext NOT NULL,
+  `permission_check` int(100) NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_role (id, created_date_time, creator, creator_name, role_id, role_name, lower_case_name, access_pages, access_page_actions, permission_check, deleted) VALUES ('1','2024-11-15 16:03:21','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e44417a4d6a46664d44453d','545746755957646c63673d3d','625746755957646c63673d3d','51334a6c595852706232343d','566d6c6c64773d3d$$$5157526b$$$5257527064413d3d$$$524756735a58526c','3','0');
+
+INSERT INTO kcd_2024_role (id, created_date_time, creator, creator_name, role_id, role_name, lower_case_name, access_pages, access_page_actions, permission_check, deleted) VALUES ('2','2024-11-15 16:35:14','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e444d314d5452664d44493d','516e4a68626d4e6f49464e3059575a6d','596e4a68626d4e6f49484e3059575a6d','51334a6c595852706232343d','566d6c6c64773d3d$$$5157526b$$$5257527064413d3d$$$524756735a58526c','2','0');
+
+INSERT INTO kcd_2024_role (id, created_date_time, creator, creator_name, role_id, role_name, lower_case_name, access_pages, access_page_actions, permission_check, deleted) VALUES ('3','2024-11-15 16:36:34','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e444d324d7a52664d444d3d','5232396b6233647549464e3059575a6d','5a32396b6233647549484e3059575a6d','51334a6c595852706232343d','566d6c6c64773d3d$$$5157526b$$$5257527064413d3d$$$524756735a58526c','1','0');
+
+
+CREATE TABLE `kcd_2024_tripsheet` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `tripsheet_id` mediumtext NOT NULL,
+  `tripsheet_number` mediumtext NOT NULL,
+  `tripsheet_date` date NOT NULL,
+  `vehicle_id` mediumtext NOT NULL,
+  `vehicle_details` mediumtext NOT NULL,
+  `branch_id` mediumtext NOT NULL,
+  `branch_details` mediumtext NOT NULL,
+  `driver_name` mediumtext NOT NULL,
+  `driver_contact_number` mediumtext NOT NULL,
+  `helper_name` mediumtext NOT NULL,
+  `lr_number` mediumtext NOT NULL,
+  `lr_count` int(100) NOT NULL,
+  `acknowledged` int(100) NOT NULL,
+  `cancelled` int(100) NOT NULL,
+  `cancel_date` date NOT NULL,
+  `cancel_remarks` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_tripsheet (id, created_date_time, creator, creator_name, tripsheet_id, tripsheet_number, tripsheet_date, vehicle_id, vehicle_details, branch_id, branch_details, driver_name, driver_contact_number, helper_name, lr_number, lr_count, acknowledged, cancelled, cancel_date, cancel_remarks, deleted) VALUES ('1','2024-11-16 10:22:17','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5459784d5449774d6a51784d4449794d5464664d44453d','1/TS','2024-11-16','4d5455784d5449774d6a51774e444d344e5446664d44453d','55326c3259534255636d467563334276636e51674c534255546a593349454643494445794d79416f4d54497a4e4455324e7a67354d436b3d','4d5455784d5449774d6a51774e4441774e5442664d44453d','55315a4c4943306755326c325957746863326b67516e4a68626d4e6f494367784d6a4d304e5459334f446b774b513d3d','51584a3162413d3d','4d54497a4e4455324e7a67354d413d3d','5458567561513d3d','1/P','1','1','0','1947-01-01','NULL','0');
+
+INSERT INTO kcd_2024_tripsheet (id, created_date_time, creator, creator_name, tripsheet_id, tripsheet_number, tripsheet_date, vehicle_id, vehicle_details, branch_id, branch_details, driver_name, driver_contact_number, helper_name, lr_number, lr_count, acknowledged, cancelled, cancel_date, cancel_remarks, deleted) VALUES ('2','2024-11-16 10:47:39','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5459784d5449774d6a51784d4451334d7a6c664d44493d','2/TS','2024-11-16','4d5455784d5449774d6a51774e444d344e5446664d44453d','55326c3259534255636d467563334276636e51674c534255546a593349454643494445794d79416f4d54497a4e4455324e7a67354d436b3d','4d5455784d5449774d6a51774e4441784d5452664d44493d','5646524d4943306756476870636e5630614746755a32467349454a795957356a6143416f4d6a4d304e5459334f446b774d536b3d','51584a3162673d3d','4f5467334e6a55304d7a49784d413d3d','NULL','2/P','1','0','1','1947-01-01','56334a76626d636752573530636e6b3d','0');
+
+INSERT INTO kcd_2024_tripsheet (id, created_date_time, creator, creator_name, tripsheet_id, tripsheet_number, tripsheet_date, vehicle_id, vehicle_details, branch_id, branch_details, driver_name, driver_contact_number, helper_name, lr_number, lr_count, acknowledged, cancelled, cancel_date, cancel_remarks, deleted) VALUES ('3','2024-11-16 15:51:36','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5459784d5449774d6a51774d7a55784d7a5a664d444d3d','3/TS','2024-11-16','4d5455784d5449774d6a51774e444d344e5446664d44453d','55326c3259534255636d467563334276636e51674c534255546a593349454643494445794d79416f4d54497a4e4455324e7a67354d436b3d','4d5455784d5449774d6a51774e4441784d5452664d44493d','5646524d4943306756476870636e5630614746755a32467349454a795957356a6143416f4d6a4d304e5459334f446b774d536b3d','5647567a64434178','4f5467334e6a55304d7a49784d413d3d','6447567a64413d3d','2/P','1','1','0','1947-01-01','NULL','0');
+
+
+CREATE TABLE `kcd_2024_unit` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `unit_id` mediumtext NOT NULL,
+  `unit_name` mediumtext NOT NULL,
+  `lower_case_name` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_unit (id, created_date_time, creator, creator_name, unit_id, unit_name, lower_case_name, deleted) VALUES ('1','2024-11-15 16:25:44','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4449314e4452664d44453d','55476c6c5932553d','63476c6c5932553d','0');
+
+INSERT INTO kcd_2024_unit (id, created_date_time, creator, creator_name, unit_id, unit_name, lower_case_name, deleted) VALUES ('2','2024-11-15 16:25:44','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4449314e4452664d44493d','5332633d','6132633d','0');
+
+INSERT INTO kcd_2024_unit (id, created_date_time, creator, creator_name, unit_id, unit_name, lower_case_name, deleted) VALUES ('3','2024-11-15 16:25:44','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e4449314e4452664d444d3d','5132467a5a513d3d','5932467a5a513d3d','0');
+
+
+CREATE TABLE `kcd_2024_user` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `user_id` mediumtext NOT NULL,
+  `name` mediumtext NOT NULL,
+  `mobile_number` mediumtext NOT NULL,
+  `name_mobile` mediumtext NOT NULL,
+  `role_id` mediumtext NOT NULL,
+  `godown_id` mediumtext NOT NULL,
+  `branch_id` mediumtext NOT NULL,
+  `login_id` mediumtext NOT NULL,
+  `lower_case_login_id` mediumtext NOT NULL,
+  `password` mediumtext NOT NULL,
+  `admin` int(100) NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_user (id, created_date_time, creator, creator_name, user_id, name, mobile_number, name_mobile, role_id, godown_id, branch_id, login_id, lower_case_login_id, password, admin, deleted) VALUES ('1','2024-11-15 15:58:41','','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636','4f5459794f546b314d4441774d513d3d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','NULL','NULL','NULL','55334a706332396d64486468636d5636','63334a706332396d64486468636d5636','51575274615734784d6a4e41','1','0');
+
+
+CREATE TABLE `kcd_2024_vehicle` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `created_date_time` datetime NOT NULL,
+  `creator` mediumtext NOT NULL,
+  `creator_name` mediumtext NOT NULL,
+  `vehicle_id` mediumtext NOT NULL,
+  `vehicle_name` mediumtext NOT NULL,
+  `lower_case_name` mediumtext NOT NULL,
+  `vehicle_number` mediumtext NOT NULL,
+  `lower_case_number` mediumtext NOT NULL,
+  `contact_number` mediumtext NOT NULL,
+  `vehicle_details` mediumtext NOT NULL,
+  `deleted` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+INSERT INTO kcd_2024_vehicle (id, created_date_time, creator, creator_name, vehicle_id, vehicle_name, lower_case_name, vehicle_number, lower_case_number, contact_number, vehicle_details, deleted) VALUES ('1','2024-11-15 16:38:51','4d5455784d5449774d6a51774d7a55344e4446664d44453d','55334a706332396d64486468636d5636494367354e6a49354f5455774d4441784b513d3d','4d5455784d5449774d6a51774e444d344e5446664d44453d','55326c3259534255636d467563334276636e513d','63326c3259534230636d467563334276636e513d','564534324e794242516941784d6a4d3d','644734324e3246694d54497a','4d54497a4e4455324e7a67354d413d3d','55326c3259534255636d467563334276636e51674c534255546a593349454643494445794d79416f4d54497a4e4455324e7a67354d436b3d','0');
